@@ -23,7 +23,7 @@ pythonPackages.buildPythonPackage {
   };
 
   propagatedBuildInputs =
-    with python.pkgs; [
+    with pythonPackages; [
       beautifulsoup4
       docutils
       dominate

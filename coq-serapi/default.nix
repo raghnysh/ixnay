@@ -1,6 +1,6 @@
 ### Nix expression for the coq-serapi package
 
-## NOT WORKING: <https://github.com/ejgallego/coq-serapi/issues/241>.
+## NOT WORKING: <https://github.com/ejgallego/coq-serapi/issues/241>
 
 { lib, coq, fetchTarball }:
 
