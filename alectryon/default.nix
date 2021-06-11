@@ -64,6 +64,15 @@ pythonPackages.buildPythonPackage {
     done
   '';
 
+  ## Provide the `python' dependency as an attribute of this package.
+  ## This can be used to build a consistent Python environment like
+  ## this:
+  ##
+  ## python = alectryon.python; pythonEnvironment =
+  ## python.withPackages [ package1 package2 ...];
+
+  inherit python;
+
   meta = {
     description = "Tools for documents that mix Coq code and prose";
     longDescription = ''
