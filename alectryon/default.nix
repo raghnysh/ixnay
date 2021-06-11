@@ -40,8 +40,10 @@ pythonPackages.buildPythonPackage {
 
   installPhase = ''
     runHook preInstall
-    mkdir -p $out/lib/python3.9/site-packages/alectryon
-    cp -r $src/* $out/lib/python3.9/site-packages/alectryon
+    site_packages_directory="$out/${python.sitePackages}"
+    package_directory="$site_packages_directory/alectryon"
+    mkdir -p "$package_directory"
+    cp -r "$src"/* "$package_directory"
     runHook postInstall
   '';
 
@@ -51,12 +53,12 @@ pythonPackages.buildPythonPackage {
   ## `alectryon', `rstcoq2html', and `coqrst2html'.
 
   postInstall = ''
-    mkdir -p $out/bin
-    PYTHONPATH="$out/lib/python3.9/site-packages:$PYTHONPATH"
+    PYTHONPATH="$site_packages_directory:$PYTHONPATH"
+    bin_directory="$out/bin"
     for command in alectryon coqrst2html rstcoq2html ; do \
       makeWrapper \
-        $out/lib/python3.9/site-packages/alectryon/$command.py \
-        $out/bin/$command \
+        "$package_directory/$command.py" \
+        "$bin_directory/$command" \
         --prefix PYTHONPATH : "$PYTHONPATH" \
         --set LOCALE_ARCHIVE "$LOCALE_ARCHIVE"; \
     done
