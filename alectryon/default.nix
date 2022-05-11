@@ -86,7 +86,7 @@ pythonPackages.buildPythonPackage {
     license = lib.licenses.mit;
     maintainers = [
       {
-        name = "N. Raghavendra";
+        name = "Raghavendra Nyshadham";
         email = "raghu@hri.res.in";
         github = "nyraghu";
         githubId = 11349287;

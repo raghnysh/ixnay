@@ -33,7 +33,7 @@ stdenv.mkDerivation {
     license = lib.licenses.bsd2;
     maintainers = [
       {
-        name = "N. Raghavendra";
+        name = "Raghavendra Nyshadham";
         email = "raghu@hri.res.in";
         github = "nyraghu";
         githubId = 11349287;

@@ -55,7 +55,7 @@ ocamlPackages.buildDunePackage {
     license = lib.licenses.lgpl21Plus;
     maintainers = [
       {
-        name = "N. Raghavendra";
+        name = "Raghavendra Nyshadham";
         email = "raghu@hri.res.in";
         github = "nyraghu";
         githubId = 11349287;

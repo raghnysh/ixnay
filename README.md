@@ -6,7 +6,7 @@ want custom Nix expressions.
 
 ## Copying
 
-The author of this work is N. Raghavendra.  The work is dedicated to
+The author of this work is Raghavendra Nyshadham.  The work is dedicated to
 the public domain under the Creative Commons CC0 1.0 Universal Public
 Domain Dedication.  The author waives all rights to the work,
 including related and neighbouring rights, to the extent allowed by
