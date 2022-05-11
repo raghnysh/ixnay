@@ -35,7 +35,7 @@ stdenv.mkDerivation {
       {
         name = "Raghavendra Nyshadham";
         email = "rn@raghnysh.com";
-        github = "nyraghu";
+        github = "raghnysh";
         githubId = 11349287;
       }
     ];
