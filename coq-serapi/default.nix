@@ -56,7 +56,7 @@ ocamlPackages.buildDunePackage {
     maintainers = [
       {
         name = "Raghavendra Nyshadham";
-        email = "raghu@hri.res.in";
+        email = "rn@raghnysh.com";
         github = "nyraghu";
         githubId = 11349287;
       }
